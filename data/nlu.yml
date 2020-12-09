@@ -1,0 +1,388 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - chào bot
+    - ê hỏi chút
+    - alo bot
+    - e
+    - chào
+    - ê
+    - m ei
+    - alo
+    - t hỏi xíu nè
+    - này bảo
+    - ê bảo này
+    - lo
+    - ê bot
+    - m ơi
+    - hề lố
+    - hỏi chút vs
+    - e m ơi
+- intent: goodbye
+  examples: |
+    - good by
+    - cee you later
+    - bye
+    - goodbye
+    - bye bye
+    - see you later
+    - okie thanks
+    - cảm ơn nhá!
+    - xéo đi
+    - hẹn gặp lại
+    - okie
+    - m biến đi
+    - tks
+    - tôi hiểu rồi, cảm ơn bot nha!
+    - bye bot
+    - bye nha
+    - thôi được rồi
+    - hehe cảm ơn bot
+    - cảm ơn nha
+    - okie hiu
+- intent: xin_ten
+  examples: |
+    - Tôi tên [Linh](user_name)
+    - [Linh](user_name)
+    - Tao là [Hiếu](user_name)
+    - [Đạt](user_name)
+    - [Hiếu](user_name) nè
+    - Bố m là [Linh](user_name)
+    - Tôi là [Hiếu](user_name)
+    - Tên [linh](user_name) nè
+    - Tôi tên [Linh](user_name) á bot ơi
+    - [Linh](user_name) nhé
+- intent: bat_lich_su
+  examples: |
+    - cmm bot ạ
+    - cmm á
+    - chó này m như nào
+    - bot óc chó ngu si
+    - com mẹ nhà m
+    - ngu học
+    - cmm bot
+    - cmm
+    - cmm :))
+    - con chó bot
+    - m bị ngu à
+    - óc chó bot
+    - thứ bã đậu
+    - m câm cmm mồm m vào bot
+    - mả mẹ mày
+    - cái cmm
+    - sao m ngu như chó thế bot
+    - óc chó bot hehe
+    - óc bã đậu à
+- intent: dang_ky_nhap_hoc
+  examples: |
+    - Cho t hỏi về thủ tục đăng kí nhập học đi
+    - cần những giấy tờ gì để nhập học nhỉ?
+    - cần gì để đi nhập học
+    - tôi hỏi về thủ tục đăng kí nhập học
+    - bot ơi đăng ký nhập học cần những gì?
+    - cho tôi hỏi về đăng ký nhập học
+    - tôi muốn có thêm thông tin về đăng ký nhập học
+    - đăng ký nhập học
+    - giải thích thêm về đăng ký nhập học
+    - làm thế nào để đăng ký nhập học ?
+    - đăng ký nhập học thế nào ?
+    - khi đến nhập học cần màng theo những giấy tờ gì bot nhỉ
+    - khi đến trường nhập học càn làm những thhur tục gì nhỉ
+- intent: to_chuc_lop
+  examples: |
+    - điểm tôi được 25 thì học lớp nào nhỉ
+    - trường mình phân lớp như nào nhỉ
+    - tôi được xếp vào lớp nào?
+    - bot ơi tổ chức lớp như thế nào?
+    - cho tôi hỏi về tổ chức lớp
+    - tôi muốn có thêm thông tin về tổ chức lớp
+    - tổ chức lớp
+    - giải thích thêm về tổ chức lớp
+    - tổ chức lớp như thế nào ?
+    - nhà trường xếp lớp theo tiêu chí gì thế
+- intent: tieu_chi_de_xet_hoc_bong
+  examples: |
+    - tôi muốn được học bổng
+    - cần gì để đưuọc học bổng thế
+    - Tao muốn được học bổng
+    - cho tôi biết các tiêu chí để xét học bổng
+    - cho tôi hỏi về điều kiện để được xét học bổng
+    - Tiêu chí để được xét học bổng
+    - bot ơi điều kiện để được xét học bổng là gì?
+    - tôi muốn có thêm thông tin về điều kiện để được xét học bổng
+    - điều kiện để được xét học bổng
+    - giải thích thêm về điều kiện để được xét học bổng
+    - điều kiện để được xét học bổng là những gì ?
+    - ơ thế GPA 3.2 liệu có được học bổng ko bot
+- intent: cac_muc_hoc_bong
+  examples: |
+    - có những mức học bổng nào thế
+    - Thế có những mức học bổng nào?
+    - có những mức học bổng nào
+    - bot ơi các mức học bổng là gì?
+    - cho tôi hỏi về các mức học bổng
+    - tôi muốn có thêm thông tin về các mức học bổng
+    - các mức học bổng
+    - giải thích thêm về các mức học bổng
+    - các mức học bổng là gì
+    - ui thế thì được học bổng loại gì nhỉ
+- intent: out_of_scope
+  examples: |
+    - nay mấy độ c thế
+    - đi mua xe máy ở đâu là hợp lí nhỉ
+    - T muốn ăn phở
+    - Ai là chủ tịch nước
+    - Ô tô toyota giá bao tiền ?
+    - What is 2 + 2?
+    - Who's the US President?
+    - Việt Nam rộng bao nhiêu m2 ?
+    - Mua điện thoại ở đâu ?
+    - m như nào?
+    - thời tiết hôm nay thế nào
+    - sắp đến tết chưa thế bot
+    - i love you
+    - tôi yêu bạn
+    - giờ m thích sao
+    - thế giới có bao nhiêu nước
+    - ttyrtyrtyrtyrt
+- intent: cam_xuc_buon
+  examples: |
+    - sao ngu thế bot thế cũng không trả lời được
+    - bot ngu si
+    - thế mà cũng không trả lời được à
+    - ơ sao ngu thế
+    - bot chả thông minh tí nào cả
+    - chán bot quá
+    - ngu quá m
+    - ngu htees bot ơi
+- intent: thoi_han_dao_tao
+  examples: |
+    - tôi học kĩ sư thì mất bao lâu nhỉ
+    - học cử nhân thì mấy năm bot nhỉ
+    - cho tôi hỏi về thời hạn đào tạo
+    - thế còn thời hạn đào tạo
+    - thế thợi hạn đào tạo thì sao
+    - thế thời hạn đào tạo thì sao?
+    - bot ơi thời hạn đào tạo là bao nhiêu?
+    - tôi muốn có thêm thông tin về thời hạn đào tạo
+    - thời hạn đào tạo
+    - thời hạn đào tạo là thế nào vậy ?
+- intent: tieu_chi_xep_loai_hoc_tap
+  examples: |
+    - tiêu chí xếp loại học tập là gì?
+    - bot ơi tiêu chí xếp loại học tập là gì?
+    - cho tôi hỏi về tiêu chí xếp loại học tập
+    - tôi muốn có thêm thông tin về tiêu chí xếp loại học tập
+    - tiêu chí xếp loại học tập
+    - giải thích thêm về tiêu chí xếp loại học tập
+    - những tiêu chí xếp loại học tập là gì ?
+    - cho tôi biết về tiêu chí xếp loại học tập của trường mình đi bot ơi
+    - GPA 3.2 thì được học lực gì nhỉ
+- intent: tieu_chi_xep_loai_tot_nghiep
+  examples: |
+    - điều kiện để được ra trường là gì nhỉ?
+    - điểm thấp thế liệu ra trường tôi được bằng gì nhỉ
+    - giải thích thêm về tiêu chí xếp loại tốt nghiệp
+    - làm sao để được xét tốt nghiệp
+    - bot ơi tiêu chí xếp loại tốt nghiệp là gì?
+    - cho tôi hỏi về tiêu chí xếp loại tốt nghiệp
+    - tôi muốn có thêm thông tin về tiêu chí xếp loại tốt nghiệp
+    - tiêu chí xếp loại tốt nghiệp
+    - những tiêu chí xếp loại tốt nghiệp là gì ?
+- intent: canh_cao_hoc_tap
+  examples: |
+    - tôi nợ nhiều tín quá liệu có sao không bot :<
+    - điểm tích lũy của tôi thấp quá không biết có sao không bot nhỉ
+    - bot ơi các mức cảnh cáo học tập là gì?
+    - như thế nào thì bị cảnh cáo học tập
+    - cho tôi hỏi về các mức cảnh cáo học tập
+    - tôi muốn có thêm thông tin về các mức cảnh cáo học tập
+    - các mức cảnh cáo học tập
+    - giải thích thêm về các mức cảnh cáo học tập
+    - các mức cảnh cáo học tập là gì ?
+    - Tao nợ 10 tín có bị cảnh cáo không?
+- intent: buoc_thoi_hoc
+  examples: |
+    - Tôi đang ở cảnh cáo học tập 2 và kì này lại nợ 10 tín nữ thì có sao ko bot hic
+    - liệu điểm thấp thế có bị đình chỉ học không bot
+    - như thế nào thì bị buộc thôi học
+    - bot ơi các mức buộc thôi học là gì?
+    - cho tôi hỏi về các mức buộc thôi học
+    - tôi muốn có thêm thông tin về các mức buộc thôi học
+    - các mức buộc thôi học
+    - giải thích thêm về các mức buộc thôi học
+    - các mức buộc thôi học là gì
+- intent: dieu_kien_de_duoc_thi_het_hoc_phan
+  examples: |
+    - Tôi nghỉ nhiều quá liệu cuối kì có sao không nhỉ
+    - tôi nghỉ học nhiều có được thi hết môn không?
+    - bot ơi điều kiện để được thi hết học phần là gì?
+    - cho tôi hỏi về điều kiện để được thi hết học phần
+    - tôi muốn có thêm thông tin về điều kiện để được thi hết học phần
+    - điều kiện để được thi hết học phần
+    - giải thích thêm về điều kiện để được thi hết học phần
+    - điều kiện để được thi hết học phần là những gì ?
+    - tôi hay nghỉ học có được thi hết môn không
+    - điểm giữa kì bị 0 thì có được thi cuối kì không bot ơi huhu
+    - với cả t hay nghỉ học môn này ấy thì có sao không hu
+- intent: hoc_phan
+  examples: |
+    - học phần là như thế nào hả bot
+    - bot ơi học phần, tín chỉ là gì ?
+    - cho t hỏi về học phần và tín chỉ
+    - giải thích cho t về học phần và tín chỉ
+    - tôi muốn có thêm thông tin về học phần và tín chỉ
+    - thể nào là học phần và tín chỉ ?
+    - học phần là gì m
+    - học phần là gì
+    - học phần là gì thế
+    - học phần là gì thế bot
+    - Tôi muốn hỏi về học phần
+    - học phàn là gì m
+    - học phần là gì nhỉ?
+- intent: dang_ky_hoc_tap
+  examples: |
+    - tôi thấy hơi băn khoăn về việc đăng kí học bot ạ
+    - Đăng kí học kiểu gì thế
+    - bot ơi đăng ký học tập thế nào?
+    - cho tôi hỏi về đăng ký học tập
+    - tôi muốn có thêm thông tin về đăng ký học tập
+    - đăng ký học tập
+    - giải thích thêm về đăng ký học tập
+    - làm thế nào để đăng ký học tập?
+    - đăng ký học tập thế nào ?
+    - làm sao để đăng kí học được
+- intent: dieu_kien_de_duoc_xet_tot_nghiep
+  examples: |
+    - tôi sợ không ra đưuọc trường bot ạ
+    - như thế nào thì không được xét tốt nghiệp
+    - bot ơi điều kiện để được xét tốt nghiệp là gì?
+    - cho tôi hỏi về điều kiện để được xét tốt nghiệp
+    - tôi muốn có thêm thông tin về điều kiện để được xét tốt nghiệp
+    - điều kiện để được xét tốt nghiệp
+    - giải thích thêm về điều kiện để được xét tốt nghiệp
+    - điều kiện để được xét tốt nghiệp là những gì ?
+- intent: canh_cao_hoc_duong
+  examples: |
+    - bot ơi các mức cảnh cáo học đường là gì?
+    - tôi hay đóng tiền học muộn có bị sao không thế bot
+    - bot ơi các mức cảnh cáo học đường là gì?
+    - cho tôi hỏi về các mức cảnh cáo học đường
+    - tôi muốn có thêm thông tin về các mức cảnh cáo học đường
+    - các mức cảnh cáo học đường
+    - giải thích thêm về các mức cảnh cáo học đường
+    - các mức cảnh cáo học đường là gì
+    - các mức cảnh cáo học đường là thế nào nhỉ
+- intent: mien_giam_hoc_phi
+  examples: |
+    - miễn giảm học phí là gì
+    - có được hưởng nhiều chế độ ưu đãi cùng một lúc được không hở bot
+    - bot ơi miễn giảm học phí là gì
+    - miễn giảm học áp dụng cho trường hợp nào
+    - có được hưởng nhiều chế độ miễn giảm học phí hay không ?
+- intent: doi_tuong_mien
+  examples: |
+    - nhà trường có chính sách gì hỗ trợ cho hộ nghèo không ạ
+    - em thuộc diện mồ côi cha mẹ thì có được giảm hay miễn học phí không ạ
+    - đối tượng nào được miễn học phí ?
+    - trường hợp nào được miễn học phí ?
+    - miễn học phí áp dụng cho những trường hợp nào
+    - đối tượng có hoàn cảnh ra sao thì được miễn giảm học phí
+- intent: doi_tuong_giam_50
+  examples: |
+    - tôi có mẹ là cán bộ và mẹ tôi bị tai nạn lao động thì có thuộc đối tượng miễn giảm gì không ạ
+    - bố tôi là viên chức mắc bệnh nghề nghiệp thì tôi có được miễn hay giảm học phí không bot
+    - đối tượng nào đươc giảm 50% học phí ?
+    - trường hợp nào được giảm 50% học phí ?
+    - giảm 50% học phí áp dựng cho những đối tượng nào ?
+    - đối tượng có hoàn cảnh ra sao thì được giảm 50% học phí ?
+- intent: thu_tuc_mien_giam
+  examples: |
+    - tôi cần làm gì để được miễn hoặc giảm học phí nhỉ
+    - thời hạn để nộp hồ sơ miễn giảm học phí là bao lâu thế bot
+    - thủ tục để được miễn giảm học phí là gì
+    - để được miễn giảm học phí cần làm gì ?
+    - hưởng chế độ miễn giảm học phí cần làm gì ?
+- intent: quy_trinh_mien_giam
+  examples: |
+    - quy tình ddeeer đưuọc miễn giảm học phí alf gì nhỉ?
+    - quy trình miễn giảm học phí của học viện
+    - quy trình miễn giảm học phí như thế nào
+    - quá trình miễn giảm học phí trải qua giai đoạn nào
+    - từng bước để nhà trường miễn giảm học phí là gì ?
+- intent: thanh_phan_xet_mien_giam
+  examples: |
+    - những ai tham gia vào việc xét giảm học phí
+    - ai là người đánh giá việc xét giảm học phí
+    - đối tượng nào tham gia xét miễn giảm học phí
+    - cơ quan tổ chức nào tham gia xét miễn giảm học phí
+    - trách nhiệm xét miễn giảm học phí thuộc về ai ?
+- intent: trach_nhiem_phong_chinh_tri
+  examples: |
+    - trách nhiệm của phòng chính trị với miễn giảm học phí
+    - trách nhiệm của phòng chi sh trị với việc miễn học phí
+    - phòng chính trị có trách nhiệm gì đối với việc miễn giảm học phí
+    - chức năng của phòng chính trị đối với miễn giảm học phí
+    - phòng chính trị giúp gì cho quá trình xét miễn giảm học phí
+- intent: trach_nhiem_phong_dao_tao
+  examples: |
+    - trach nhiemj của phòng đào tạo với việc miễn giảmhọc phí
+    - trách nhiệm của phòng đào tạo với việc giảm học phí
+    - phòng đào tạo có trách nhiệm gì đối với việc miễn giảm học phí
+    - chức năng của phòng đào tạo đối với miễn giảm học phí
+    - phòng đào tạo giúp gì cho quá trình miễn giảm học phí
+- intent: trach_nhiem_ban_tai_chinh
+  examples: |
+    - trách nhiệm của phòng tài chính đối với miễn giảm học phí
+    - trách nhiem của phòng tài chính đối với giảm học phí
+    - phòng tài chính có trách nhiệm gì đối với miễn giảm học phí
+    - chức năng của phòng tài chính đối với miễn giảm học phí
+    - phòng tài chính giúp gì cho quá trình miễn giảm học phí
+- intent: huong_dan_thu_tuc_hanh_chinh
+  examples: |
+    - hướng dẫn thủ tục hành chính
+    - các vấn đề liên qaun đến thủ tục hành chính
+    - hướng dẫn thủ tục hành chính là gì
+    - thủ tục hành chính là gì
+- intent: the_lien_ket_sinh_vien
+  examples: |
+    - làm sao để có thẻ liên kết sinh viên
+    - quy trình làm thẻ  sinh viên
+    - các bước để làm thẻ liên kết sinh viên
+    - làm thẻ liên kết sinh viên cần làm gì
+    - làm thẻ liên kết sinh viên cần trải qua giai đoạn nàov
+- intent: dang_ki_cap_lai_the
+  examples: |
+    - thẻ mất thì phải làm sao hả bot
+    - thẻ sinh viên  tôi bị mất rồi.
+    - các bước để đăng kí cấp lại thẻ đã mất
+    - khi mất thẻ thì sinh viên nên làm gì
+    - mất thẻ thì làm lại như thế nào
+    - thẻ sinh viên làm lại thì trải qua quy trình gì
+- intent: bao_luu_hoc_tap
+  examples: |
+    - tôi muốn bảo lư kết quả học tập
+    - tôi muốn nghỉ học để thi lại
+    - để bảo lưu kết quả học tập cần làm gì
+    - các bước bảo lưu kết quả học tập là gì
+    - bảo lưu kết quả học tập thì làm thế nào
+- intent: xin_thoi_hoc
+  examples: |
+    - tôi muốn nghỉ học
+    - tôi không muốn đi học nữa
+    - xin thôi học cần làm gì
+    - khi muốn dừng học tập tại trường thì cần làm gì
+- intent: cap_bang_tot_nghiep
+  examples: |
+    - Cần mang gì khi đến lấy bằng
+    - thủ tục lấy bằng tốt nghiệp
+    - tôi muốn nhờ người lấy hộ bằng thì có được không bot
+    - ai là người có thể nhận bằng tốt nghiệp
+    - cần đem theo gì để có thể nhận bằng tốt nghiệp
+    - nhận bằng tốt nghiệp cần làm theo các bước gì

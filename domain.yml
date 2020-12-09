@@ -1,0 +1,255 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- xin_ten
+- bat_lich_su
+- dang_ky_nhap_hoc
+- to_chuc_lop
+- tieu_chi_de_xet_hoc_bong
+- cac_muc_hoc_bong
+- out_of_scope
+- cam_xuc_buon
+- thoi_han_dao_tao
+- tieu_chi_xep_loai_hoc_tap
+- tieu_chi_xep_loai_tot_nghiep
+- canh_cao_hoc_tap
+- buoc_thoi_hoc
+- dieu_kien_de_duoc_thi_het_hoc_phan
+- hoc_phan
+- dang_ky_hoc_tap
+- dieu_kien_de_duoc_xet_tot_nghiep
+- canh_cao_hoc_duong
+- mien_giam_hoc_phi
+- doi_tuong_mien
+- doi_tuong_giam_50
+- thu_tuc_mien_giam
+- quy_trinh_mien_giam
+- thanh_phan_xet_mien_giam
+- trach_nhiem_phong_chinh_tri
+- trach_nhiem_phong_dao_tao
+- trach_nhiem_ban_tai_chinh
+- huong_dan_thu_tuc_hanh_chinh
+- the_lien_ket_sinh_vien
+- dang_ki_cap_lai_the
+- bao_luu_hoc_tap
+- xin_thoi_hoc
+- cap_bang_tot_nghiep
+entities:
+- user_name
+slots:
+  user_name:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Xin chào. Tôi có thể xin tên của bạn được không?
+  utter_goodbye:
+  - text: Cảm ơn đã sử dụng tôi. Có gì cần trợ giúp thêm nhớ hỏi tôi nhé!
+  utter_xin_ten:
+  - text: Xin chào {user_name}. Tôi có thể giúp gì cho bạn nhỉ?
+  utter_bat_lich_su:
+  - text: Bạn ơi, chúng ta là người có văn hóa nên hành xử văn minh hơn ạ! Bot cảm
+      ơn bạn!'
+  utter_dang_ky_nhap_hoc:
+  - text: Khi đăng ký nhập học, sinh viên nộp các giấy tờ theo quy định của Quy chế  tuyển
+      sinh đại học
+  utter_to_chuc_lop:
+  - text: "Sinh viên sẽ được phân chia vào hai dạng lớp : \n + Lớp sinh viên = được\
+      \ tổ chức theo khóa tuyển sinh và theo ngành hoặc theo chuyên ngành đạo tạo,\
+      \ có hệ thống cán bộ lớp, cán bộ đoàn \n + Lớp học phần = l đơn vị cơ bản cho\
+      \ việc tổ chức giảng dạy. Một lớp bao gồm các sinh viên theo học cùng một học\
+      \ phần trong cùng một khoảng thời gian nhất định, do một giáo viên giảng dạy"
+  utter_tieu_chi_de_xet_hoc_bong:
+  - text: "+ Tất cả các học phần đăng ký trong kỳ học phải từ D+ trở lên \n + Điểm\
+      \ TBHK đạt loại khá trở lên \n + Số TC tích lũy tối thiểu 90% tổng số TC theo\n\
+      kế       hoạch học tập trong CTTĐ tính đến hết học kỳ đang xét học bổng \n +\
+      \ Số TC đăng ký học tập trong học kỳ xét học bổng phải thỏa mãn tối thiếu 15TC\
+      \ đối với sinh viên có số TC tích lũy không vượt quá tổng số TC theo kế hoạch\
+      \ học tập đến hết kỳ xét học bổng, tối thiểu 10TC đối với sinh viên có số TC\
+      \ tích lũy nhiều hơn TC theo kế hoạch học tập trong CTĐT tính đến hết kỳ học\
+      \ xét học bổng \n + Đạt trình độ ngoại ngữ theo chuẩn của học\nviện \n + Điểm\
+      \ rèn luyên từ khá trở lên"
+  utter_cac_muc_hoc_bong:
+  - text: "Có ba mức học bổng : khá, giỏi, xuất sắc \n + Khá = bằng mức trần học phí\
+      \ do Chính phụ quy định đối với các CTĐT, sinh viên có điểm TBHK đạt mức khá,\
+      \  điểm rèn luyện khá \n + Giỏi = bằng 1,2 lần mức khá, sinh viên có điểm\n\
+      TBHK đạt loại giỏi, điểm rèn luyện mức tốt \n + Xuất = sắc bằng 1,4 lần mức\
+      \ giỏi, sinh viên có điểm TBHK và điểm rèn luyện xuất sắc"
+  utter_out_of_scope:
+  - text: Tôi không hiểu ý của bạn. Bạn có thể nhập lại yêu cầu được không ?
+  utter_cam_xuc_buon:
+  - text: Bot xin lỗi! bot chưa đủ năng lực để trả lời câu của bạn! Bot sẽ học hỏi
+      nhiều hơn ạ!
+  utter_thoi_han_dao_tao:
+  - text: "- Bậc đại học dài hạn chính quy, tốt nghiệp kỹ sư = 5 năm \n- Bậc đại học\
+      \ dài hạn chính quy. tốt nghiệp cử nhân đại học = 4 năm\n- Bậc cao đẳng chính\
+      \ quy, tốt nghiệp cử nhân cao đẳng = 3 năm\n- Một năm học có 2 kỳ chính và ít\
+      \ nhất một kỳ phụ\n- Một kỳ chính có 15 tuần học và 3 tuần thi, một kỳ phụ có\
+      \ 5 tuần học và 1 tuần thi"
+  utter_tieu_chi_xep_loai_hoc_tap:
+  - image: https://imgur.com/DNsh3C9
+    text: Đây là các tiêu chí xếp loại học tập
+  utter_tieu_chi_xep_loai_tot_nghiep:
+  - image: https://i.imgur.com/iyOKCuB.jpg
+    text: Đây là các tiêu chí xếp loại tốt nghiệp
+  utter_canh_cao_hoc_tap:
+  - text: "Có 4 mức cảnh cáo học tập : 1, 2, 3, 4 có tính tích lũy và giảm nhẹ \n\
+      + Sinh viên bị nâng 1 mức cảnh cáo học tập nếu điểm TBHK đạt dưới 0.80 đối với\
+      \ học kỳ đầu tiên của khóa học, dưới 1.00 đối với các học kỳ tiếp theo tổng\
+      \ số TC của các học phần còn bị điểm F tính từ đầu khóa học đến thời điểm xét\
+      \ vượt quá 24TC  \n+ Sinh viên bị nâng 2 mức cảnh cáo học tập khi điểm TBHK\
+      \ bằng 0 hoặc không đăng ký học tập, tự ý bỏ học không lý do  \n+ Sinh viên\
+      \ đang bị cảnh cáo học tập, nếu trong lần xử lý học tập tiếp theo nếu không\
+      \ vi phạm ở những điều trên sẽ được giảm 1 mức cảnh cáo học tập"
+  utter_buoc_thoi_hoc:
+  - text: "Sinh viên bị buộc thôi học nếu \n+ có mức cảnh cáo học tập bằng 4 \n+ có\
+      \ mức cảnh cáo học đường bằng 4 \n+ có mức cảnh cáo học tập bằng 3 và có mức\
+      \ cảnh cáo học đường bất kỳ \n+ có mức cảnh cáo học đường bằng 3 và có mức cảnh\
+      \ cảo học tập bất kỳ \n+ hết thời gian tối đa được phép học tập \n+ vi phạm\
+      \ quy định nộp học phí\n+ đi thi hộ, nhờ thi hộ"
+  utter_dieu_kien_de_duoc_thi_het_hoc_phan:
+  - text: "- Sinh viên phải tham gia ít nhất 80% số giờ lên lớp của học phần \n- Hoàn\
+      \ thành đầy đủ các phần bắt buộc của học phần \n- Không vi phạm kỷ luật học\
+      \ tập, nội quy trường đến mức bị cấm thi theo quy định của học viện \n- Có điểm\
+      \ thường xuyên trên 1"
+  utter_hoc_phan:
+  - text: "- Học phần là đơn vị cấu thành của CTĐT, thể hiện khổi lượng kiến thức\
+      \ tương đối trọn vẹn, được tổ chức giảng dạy trong một học kỳ \n- Một học phần\
+      \ có thể có nhiều thành phần = lý thuyết, thảo luận, bài tập, thực hành, thí\
+      \ nghiệm, bài tập lớn \n- Các loại học phần = học phần tích lũy học phần bắt\
+      \ buộc học phần tự chọn học phần điều kiện học phần tiên quyết học phần học\
+      \ trước học phần tương đương học phần tốt nghiệp \n- Tín chỉ = đơn vị để lượng\
+      \ hóa khối lượng học tập \n- Một tín chỉ bằng 15 tiết lý thuyết, 30-45 tiết\
+      \ thực hành"
+  utter_dang_ky_hoc_tap:
+  - text: "- Đây là quy trình bắt buộc của mỗi sinh viên. Sinh viên chọn đăng ký học\
+      \ phần phù hợp với kế hoạch của ban thân trên công thông tin của sinh viên \n\
+      - Đối với đợt đăng ký chính = sinh viên đăng ký chậm nhất 1 tuần trước khi kỳ\
+      \ học bắt đầu \n- Đối với đợt điều chỉnh = sinh viên đăng ký lại các học phần\
+      \ bị hủy do không đăng ký được, đăng ký bổ sung hay bỏ bớt học phần \n- Khối\
+      \ lượng học tập sinh viên có thể đăng ký\n\n  - 10TC - 14TC = sinh viên có xếp\
+      \ loại học lức yếu, không đạt chuẩn\n  - 14TC - 25TC = sinh viên có xếp loại\
+      \ học lực bình thường ngoại ngữ theo quy định \n  - Tối đa 8TC trong học kỳ\
+      \ phụ"
+  utter_dieu_kien_de_duoc_xet_tot_nghiep:
+  - text: "Tại thời điểm xét tốt nghiệp, sinh viên cần các điều kiện sau : \n+ Tại\
+      \ thời điểm xét tốt nghiệp sinh viên không bị truy cứu trách nhiệm hình sự hoặc\
+      \ không đang trong thời gian bị kỷ luật \n+ Tích lũy đủ sô học phần và TC +\
+      \ Điểm TBTL toàn khóa học từ 2.00 trở lên \n+ Có các chứng chỉ quốc phòng an\
+      \ ninh, giáo dục thể chất \n+ Có chứng chỉ ngoại ngữ đạt chuẩn đầu ra theo quy\
+      \ định của học viên \n+ Có đơn gửi phòng Đào tạo đề nghị được xét tốt nghiệp"
+  utter_canh_cao_hoc_duong:
+  - text: "Có 4 mức cảnh có học đường : 1, 2, 3, 4, có tính tích luy, không có tính\
+      \ giảm nhẹ\n - Trong quá trình học tập, mỗi lần bị nhận hình thức kỷ luật từ\
+      \ cảnh cáo đến kỷ luật, sinh viên bị nâng 1 mức cảnh cáo học đường\n - Sinh\
+      \ viên bị hình thức cảnh cáo hoặc đình chỉ thi, kiểm tra do vi phạm quy chế\
+      \ thi, kiểm tra sẽ bị nâng 1 mức cảnh cáo học đường\n - Sinh viên đi thi hộ\
+      \ hay nhờ người khác đi thi hộ sẽ bị nâng 2 mức cảnh cáo học đường\n - Sinh\
+      \ viên vi phạm quy định nộp học lí sẽ bị nâng 1 mức cảnh cáo học đường"
+  utter_mien_giam_hoc_phi:
+  - text: Là hình thức khuyến khích học tập chỉ áp dụng đối với sinh viên đào tạo
+      đại học, cao đẳng, liên thông hệ chính quy tại Học viện, và chỉ được hưởng một
+      chế độ uu đãi cao nhất
+  utter_doi_tuong_mien:
+  - text: "- Người có công với cách mạng và thân nhân của người có công với cách mạng\n\
+      \ - Sinh viên mồ côi cả cha lẫn mẹ không nơi nương tựa hoặc bị tàn tật, khuyết\
+      \ tật có khó khăn về kinh tế \n - Sinh viên là người dân tộc thiểu số thuộc\
+      \ hộ nghèo và hộ cận nghèo theo quy định của Thủ tướng Chính phủ \n - Sinh viên\
+      \ là người dân tộc thiểu số rất  ít người, ở vùng có điều kiện kinh tế \n -\
+      \ Xã hội khó khăn và đặc biệt khó khăn theo quyết định của cơ quan nhà nước\
+      \ có thẩm quyền"
+  utter_doi_tuong_giam_50:
+  - text: Sinh viên là con cán bộ, công nhân, viên chức mà cha hoặc mẹ bị tai nạn
+      lao động hoặc mắc bệnh nghề nghiệp được hưởng trợ cấp thường xuyên
+  utter_thu_tuc_mien_giam:
+  - text: Trong vòng 15 ngày (kể cả ngày lễ, ngày nghỉ) kể từ ngày học đầu tiên của
+      mỗi học kỳ, sinh viên nộp hồ sơ đề nghị miễn, giảm học phí cho các khoa, viện
+      quản lý sinh viên
+  utter_quy_trinh_mien_giam:
+  - text: "- Sau khi nhận đủ hồ sơ đề nghị xét miễn, giảm học phí của sinh viên, trong\
+      \ vòng 10 ngày làm việc các khoa, viện quản lý sinh viên thẩm định hồ sơ và\
+      \ tiến hành họp để xét duyệt. Sau đó gửi danh sách các sinh viên được đề nghị\
+      \ miễn học phí kèm theo hồ sơ đề nghị miễn, giảm học phí của sinh viên về Ban\
+      \ Chính sách/Phòng Chính trị. Từ học kỳ tiếp theo các khoa, viện đề nghị cả\
+      \ các sinh viên thuộc đối tượng không phải làm lại hồ sơ đề nghị miễn, giảm\
+      \ học phí  để Học viên xét duyệt. \n- Phòng Chính trị chủ trì thẩm định hồ sơ,\
+      \ phối hợp với Phòng Đào tạo và Ban Tài chính báo cáo Thủ trưởng Học viện tại\
+      \ hội nghị xét miễn, giảm học phí ; tổng hợp, báo cáo Giám đốc Học viện quyết\
+      \ định. \n- Học viện xét miễn, giảm học phí  cho sinh viên theo từng học kỳ.\
+      \ Sinh viên nộp hồ sơ xét miễn, giảm học phí  ở học kỳ nào thì được miễn, giảm\
+      \ học phí  ở học kỳ đó trừ các đối tượng không phải làm lại đơn, hồ sơ; không\
+      \ giải quyết truy lĩnh tiền miễn, giảm học phí  của các học kỳ trước. Học viện\
+      \ không giải quyết trường hợp sinh viên nộp hồ sơ không đúng thời gian quy định."
+  utter_thanh_phan_xet_mien_giam:
+  - text: '- Hội nghị xét miễn, giảm học phí  do đồng chí  Phó Chính ủy Học viện chủ
+      trì. Thành phần hội nghị gồm các đồng chí : Phó Chủ nhiệm Chính trị; Phó trưởng
+      Phòng Đào tạo; Trưởng ban Tài chính; Trưởng ban Chính sách; Trưởng ban Thanh
+      niên; Chỉ huy các khoa, viện quản lý sinh viên. Phòng Chính trị là cơ quan thường
+      trực'
+  utter_trach_nhiem_phong_chinh_tri:
+  - text: "- Chủ trì việc tổ chức hướng dẫn thực hiện chế độ miễn, giảm học phí cho\
+      \ sinh viên trong Học viện \n- Chủ trì phối hợp với Phòng Đào tạo, Ban Tài chính\
+      \ để hướng dẫn thực hiện việc xét miễn, giảm học phí  cho các khoa quản lý sinh\
+      \ viên \n- Thẩm định hồ sơ, tổng hợp, báo cáo tại hội nghị xét miễn, giảm học\
+      \ phí  của Học viện và báo cáo Giám đốc Học viện quyết định"
+  utter_trach_nhiem_phong_dao_tao:
+  - text: "- Báo cáo Cục Nhà trường/Bộ Tổng Tham mưu để xin ý kiến chỉ đạo trong việc\
+      \ thực hiện chế độ miễn, giảm học phí  cho sinh viên. \n- Phối hợp với Phòng\
+      \ Chính trị và Ban Tài chính trong việc thẩm định, xét duyệt sinh viên được\
+      \ miễn, giảm học phí  và lập dự toán kinh phí  đề nghị Bộ Quốc phòng thẩm định,\
+      \ tổng hợp gửi Bộ Tài chính, Bộ Giáo dục và Đào tạo cấp bù kinh phí  cho Học\
+      \ viện. \n- Rà soát, thẩm định đối với các trường hợp sinh viên bị kỷ luật đình\
+      \ chỉ học tập, ngừng học hoặc buộc thôi học, học lưu ban, học lại, học bổ sung,\
+      \ tốt nghiệp chậm để làm cơ sở xét miễn, giảm học phí đảm bảo theo đúng khung\
+      \ thời gian học hoặc tổng số tín chỉ theo quy định cho từng đối tượng đào tạo.\
+      \ \n- Thực hiện chế độ báo cáo theo quy định việc thực hiện chế độ miễn giảm,\
+      \ học phí của sinh viên với Cục Nhà trường/Bộ Tổng Tham mưu."
+  utter_trach_nhiem_ban_tai_chinh:
+  - text: "- Báo cáo Cục Tài chính/Bộ Quốc phòng để xin ý kiến chỉ đạo trong việc\
+      \ thực hiện chế độ miễn, giảm học phí  cho sinh viên. \n- Hàng năm, căn cứ vào\
+      \ số lượng các đối tượng thuộc diện được miễn, giảm học phí  để chủ trì phối\
+      \ hợp với Phòng Chính trị và Phòng Đào tạo lập danh sách, xây dựng dự toán kinh\
+      \ phí  đề nghị Bộ Quốc phòng thẩm định, tổng hợp gửi Bộ Tài chính, Bộ Giáo dục\
+      \ và Đào tạo cấp bù kinh phí  cho Học viện. \n- Tiếp nhận kinh phí , quản lý\
+      \ và tiến hành thanh toán, quyết toán kinh phí  theo quy định hiện hành. \n\
+      - Phối hợp với Phòng Chính trị và Phòng Đào tạo trong việc xét duyệt sinh viên\
+      \ được miễn, giảm học phí theo quy định."
+  utter_huong_dan_thu_tuc_hanh_chinh:
+  - text: Hướng dẫn giải quyết vấn đề thắc mắc cho sinh viên liên quan đến hành chính,
+      văn bản
+  utter_the_lien_ket_sinh_vien:
+  - text: "- Sinh viên kê khai theo mẫu, nộp 02 ảnh 3x4, photo 01 bản chứng minh nhân\
+      \ dân và 100.000 về Bộ phận tiếp nhận GQTTHC. \n- Phòng Chính trị phối hợp với\
+      \ Ngân  hàng BIDV phát hành thẻ. \n- Sinh viên nhận thẻ tại bộ phận tiếp nhận\
+      \ GQTTHC"
+  utter_dang_ki_cap_lai_the:
+  - text: "- Sinh viên kê khai theo mẫu, nộp 33.000 đồng phí phát hành lại thẻ về\
+      \ Bộ phận tiếp nhận GQTTHC. \n- Phòng Chính trị phối hợp với Ngân hàng BIDV\
+      \ phát hành thẻ. \n- Sinh viên nhận thẻ tại bộ phận tiếp nhận GQTTHC"
+  utter_bao_luu_hoc_tap:
+  - text: "- Sinh viên kê khai theo mẫu nộp về Bộ phận tiếp nhận GQTTHC. \n- Phòng\
+      \ Đào tạo thẩm định, trình Giám đốc ký, ra quyết định \n- Sinh viên nhận kết\
+      \ quả tại bộ phận tiếp nhận  GQTTHC."
+  utter_xin_thoi_hoc:
+  - text: "- Sinh viên làm đơn theo mẫu nộp về Bộ phận tiếp nhận GQTTHC. \n- Văn phòng\
+      \ Học viện thẩm định, viết, ký, đóng dấu giấy giới thiệu. -Sinh viên nhận kết\
+      \ quả tại bộ phận tiếp nhận GQTTHC"
+  utter_cap_bang_tot_nghiep:
+  - text: "- Khi đến nhận bằng TN, phải xuất trình chứng minh thư nhân dân hoặc giấy\
+      \ tờ tùy thân có dánh ảnh \n- Bằng tốt nghiệp được cấp trực tiếp cho người có\
+      \ tên trong văn bằng \n- Trường hợp nhận hộ phải có giấy ủy quyền của người\
+      \ được cấp bằng và có xác nhận của cơ quan hoặc chính quyền Phường (Xã) nơi\
+      \ người được cấp đang công tác, cư trú"
+actions:
+- utter_xin_ten
+- utter_bat_lich_su
+- utter_dang_ky_nhap_hoc
+- utter_to_chuc_lop
+- utter_tieu_chi_de_xet_hoc_bong
+- utter_cac_muc_hoc_bong
+- utter_out_of_scope
+- utter_cam_xuc_buon
+- utter_dieu_kien_de_duoc_xet_tot_nghiep
