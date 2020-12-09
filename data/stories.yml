@@ -316,3 +316,285 @@ stories:
   - action: utter_trach_nhiem_phong_dao_tao
   - intent: trach_nhiem_ban_tai_chinh
   - action: utter_trach_nhiem_ban_tai_chinh
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_2
+  steps:
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_3
+  steps:
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_4
+  steps:
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+- story: thu_tuc_hanh_chinh_1
+  steps:
+  - intent: huong_dan_thu_tuc_hanh_chinh
+  - action: utter_huong_dan_thu_tuc_hanh_chinh
+  - intent: the_lien_ket_sinh_vien
+  - action: utter_the_lien_ket_sinh_vien
+  - intent: dang_ki_cap_lai_the
+  - action: utter_dang_ki_cap_lai_the
+- story: thu_tuc_hanh_chinh_5
+  steps:
+  - intent: huong_dan_thu_tuc_hanh_chinh
+  - action: utter_huong_dan_thu_tuc_hanh_chinh
+  - intent: dang_ki_cap_lai_the
+  - action: utter_dang_ki_cap_lai_the
+  - intent: bao_luu_hoc_tap
+  - action: utter_bao_luu_hoc_tap
+- story: thu_tuc_hanh_chinh_7
+  steps:
+  - intent: huong_dan_thu_tuc_hanh_chinh
+  - action: utter_huong_dan_thu_tuc_hanh_chinh
+  - intent: dang_ki_cap_lai_the
+  - action: utter_dang_ki_cap_lai_the
+  - intent: cap_bang_tot_nghiep
+  - action: utter_cap_bang_tot_nghiep
+- story: Untitled Story
+  steps:
+  - intent: the_lien_ket_sinh_vien
+  - action: utter_the_lien_ket_sinh_vien
+  - intent: dang_ki_cap_lai_the
+  - action: utter_dang_ki_cap_lai_the
+  - intent: cap_bang_tot_nghiep
+  - action: utter_cap_bang_tot_nghiep
+- story: mien_giam_hoc_phi_1
+  steps:
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: thu_tuc_mien_giam
+  - action: utter_thu_tuc_mien_giam
+  - intent: quy_trinh_mien_giam
+  - action: utter_quy_trinh_mien_giam
+  - intent: thanh_phan_xet_mien_giam
+  - action: utter_thanh_phan_xet_mien_giam
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+- story: Untitled Story
+  steps:
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_giam_50
+  - action: utter_doi_tuong_giam_50
+  - intent: quy_trinh_mien_giam
+  - action: utter_quy_trinh_mien_giam
+  - intent: thu_tuc_mien_giam
+  - action: utter_thu_tuc_mien_giam
+  - intent: thanh_phan_xet_mien_giam
+  - action: utter_thanh_phan_xet_mien_giam
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+- story: mien_giam_hoc_phi_5
+  steps:
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_giam_50
+  - action: utter_doi_tuong_giam_50
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: thu_tuc_mien_giam
+  - action: utter_thu_tuc_mien_giam
+  - intent: thanh_phan_xet_mien_giam
+  - action: utter_thanh_phan_xet_mien_giam
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+- story: so1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: canh_cao_hoc_tap
+  - action: utter_canh_cao_hoc_tap
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: quy_trinh_mien_giam
+  - action: utter_quy_trinh_mien_giam
+  - intent: dang_ki_cap_lai_the
+  - action: utter_dang_ki_cap_lai_the
+  - intent: cap_bang_tot_nghiep
+  - action: utter_cap_bang_tot_nghiep
+  - intent: dieu_kien_de_duoc_thi_het_hoc_phan
+  - action: utter_dieu_kien_de_duoc_thi_het_hoc_phan
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+- story: so2
+  steps:
+  - intent: bat_lich_su
+  - action: utter_bat_lich_su
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: cam_xuc_buon
+  - action: utter_cam_xuc_buon
+  - intent: tieu_chi_xep_loai_hoc_tap
+  - action: utter_tieu_chi_xep_loai_hoc_tap
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: canh_cao_hoc_tap
+  - action: utter_canh_cao_hoc_tap
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: cap_bang_tot_nghiep
+  - action: utter_cap_bang_tot_nghiep
+  - intent: thu_tuc_mien_giam
+  - action: utter_thu_tuc_mien_giam
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+- story: so3
+  steps:
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: tieu_chi_de_xet_hoc_bong
+  - action: utter_tieu_chi_de_xet_hoc_bong
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: cam_xuc_buon
+  - action: utter_cam_xuc_buon
+  - intent: tieu_chi_xep_loai_hoc_tap
+  - action: utter_tieu_chi_xep_loai_hoc_tap
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: canh_cao_hoc_tap
+  - action: utter_canh_cao_hoc_tap
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: cap_bang_tot_nghiep
+  - action: utter_cap_bang_tot_nghiep
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+- story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: tieu_chi_xep_loai_hoc_tap
+  - action: utter_tieu_chi_xep_loai_hoc_tap
+  - intent: tieu_chi_de_xet_hoc_bong
+  - action: utter_tieu_chi_de_xet_hoc_bong
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: tieu_chi_xep_loai_tot_nghiep
+  - action: utter_tieu_chi_xep_loai_tot_nghiep
+  - intent: goodbye
+  - action: utter_goodbye
+- story: cac_van_de_lien_quan_mien_giam_hoc_phi_1
+  steps:
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_giam_50
+  - action: utter_doi_tuong_giam_50
+- story: cac dieu kien
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: dieu_kien_de_duoc_thi_het_hoc_phan
+  - action: utter_dieu_kien_de_duoc_thi_het_hoc_phan
+  - intent: dieu_kien_de_duoc_xet_tot_nghiep
+  - action: utter_dieu_kien_de_duoc_xet_tot_nghiep
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: goodbye
+  - action: utter_goodbye
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: goodbye
+  - action: utter_goodbye
+- story: cac_van_de_lien_quan_mien_giam_hoc_phi_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: doi_tuong_mien
+  - action: utter_doi_tuong_mien
+  - intent: mien_giam_hoc_phi
+  - action: utter_mien_giam_hoc_phi
+  - intent: doi_tuong_giam_50
+  - action: utter_doi_tuong_giam_50
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: goodbye
+  - action: utter_goodbye
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: buoc_thoi_hoc
+  - action: utter_buoc_thoi_hoc
+  - intent: bat_lich_su
+  - action: utter_bat_lich_su
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh
+  - intent: goodbye
+  - action: utter_goodbye
+- story: trach_nhiem cua phong chinh tri dao_tao ban_tai_chinh_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: trach_nhiem_phong_chinh_tri
+  - action: utter_trach_nhiem_phong_chinh_tri
+  - intent: trach_nhiem_phong_dao_tao
+  - action: utter_trach_nhiem_phong_dao_tao
+  - intent: trach_nhiem_ban_tai_chinh
+  - action: utter_trach_nhiem_ban_tai_chinh

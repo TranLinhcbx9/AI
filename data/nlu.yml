@@ -46,6 +46,7 @@ nlu:
     - hehe cảm ơn bot
     - cảm ơn nha
     - okie hiu
+    - chào nhé!
 - intent: xin_ten
   examples: |
     - Tôi tên [Linh](user_name)
@@ -79,6 +80,8 @@ nlu:
     - sao m ngu như chó thế bot
     - óc chó bot hehe
     - óc bã đậu à
+    - cmm bot ơi
+    - thứ óc bã đậu
 - intent: dang_ky_nhap_hoc
   examples: |
     - Cho t hỏi về thủ tục đăng kí nhập học đi
@@ -151,6 +154,7 @@ nlu:
     - giờ m thích sao
     - thế giới có bao nhiêu nước
     - ttyrtyrtyrtyrt
+    - mấy h rồi
 - intent: cam_xuc_buon
   examples: |
     - sao ngu thế bot thế cũng không trả lời được
@@ -231,6 +235,7 @@ nlu:
     - tôi hay nghỉ học có được thi hết môn không
     - điểm giữa kì bị 0 thì có được thi cuối kì không bot ơi huhu
     - với cả t hay nghỉ học môn này ấy thì có sao không hu
+    - tôi học vớ vẩn quá nghỉ nhiều nữa có sao không
 - intent: hoc_phan
   examples: |
     - học phần là như thế nào hả bot
@@ -268,17 +273,19 @@ nlu:
     - điều kiện để được xét tốt nghiệp
     - giải thích thêm về điều kiện để được xét tốt nghiệp
     - điều kiện để được xét tốt nghiệp là những gì ?
+    - thế t muốn tốt nghiệp thì sao
 - intent: canh_cao_hoc_duong
   examples: |
     - bot ơi các mức cảnh cáo học đường là gì?
     - tôi hay đóng tiền học muộn có bị sao không thế bot
-    - bot ơi các mức cảnh cáo học đường là gì?
     - cho tôi hỏi về các mức cảnh cáo học đường
     - tôi muốn có thêm thông tin về các mức cảnh cáo học đường
     - các mức cảnh cáo học đường
     - giải thích thêm về các mức cảnh cáo học đường
     - các mức cảnh cáo học đường là gì
     - các mức cảnh cáo học đường là thế nào nhỉ
+    - đánh nhau có sao không
+    - choảng nhau có sao không
 - intent: mien_giam_hoc_phi
   examples: |
     - miễn giảm học phí là gì
@@ -386,3 +393,33 @@ nlu:
     - ai là người có thể nhận bằng tốt nghiệp
     - cần đem theo gì để có thể nhận bằng tốt nghiệp
     - nhận bằng tốt nghiệp cần làm theo các bước gì
+- intent: Chuan_đau_ra_tieng_anh
+  examples: |
+    - tiếng anh cần bằng gì để ra trường nhỉ
+    - khi tốt nghiệp thì cần bao nhiêu điểm TA
+    - cho tôi biết về chứng chỉ tiếng anh cần để tốt nghiệp?
+    - yêu cầu tiếng anh để tốt nghiệp là gì nhỉ
+    - trình độ tiếng anh cần để tốt nghiệp
+    - tiếng anh như nào thì dduwoicj tốt nghiệp
+    - Chuẩn tiếng anh đầu ra của học viện
+    - cần đạt trình độ tiếng anh nào khi ra trường
+- intent: Hoc_lai_ngoai_ngu
+  examples: |
+    - Trong trường hợp đã học ngoại ngữ tại trường mà thi không đạt thì có cần học lại hay không?
+    - Tôi có được thi lại nếu không đạt điểm ngoại ngữ hay không?
+- intent: Mien_hoc_phan_ngoai_ngu
+  examples: |
+    - Tôi cần có chứng chỉ nào để có thể miễn học học phần ngoại ngữ?
+    - Điểm TOEIC phải đạt bao nhiêu thì có thể xét miễn học ngoại ngữ?
+    - t có bằng 450 toeic thì có cần học TA ở trường không
+    - tôi được 550 toeic có phải học tiếng anh ở trường không
+- intent: Tham_gia_cac_hoat_dong_ren_luyen_chinh_tri
+  examples: |
+    - Khi tham gia các hoạt động chính trị xã hội, văn hóa, văn nghệ, thể thao và phòng chống tệ nạn xã hội thì tôi có được cộng điểm rèn luyện hay không?
+    - Quy định cộng điểm khi tham gia các hoạt động chính trị xã hội, văn hóa, nghệ thuật?
+- intent: nlu_fallback
+  examples: |
+    - học làm gì cho đời đau khổ
+    - sdfsdfsd
+    - dfsdfsdfs
+    - đánh nhau không bot

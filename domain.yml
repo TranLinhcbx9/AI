@@ -37,6 +37,11 @@ intents:
 - bao_luu_hoc_tap
 - xin_thoi_hoc
 - cap_bang_tot_nghiep
+- Chuan_đau_ra_tieng_anh
+- Hoc_lai_ngoai_ngu
+- Mien_hoc_phan_ngoai_ngu
+- Tham_gia_cac_hoat_dong_ren_luyen_chinh_tri
+- nlu_fallback
 entities:
 - user_name
 slots:
@@ -79,7 +84,7 @@ responses:
       TBHK đạt loại giỏi, điểm rèn luyện mức tốt \n + Xuất = sắc bằng 1,4 lần mức\
       \ giỏi, sinh viên có điểm TBHK và điểm rèn luyện xuất sắc"
   utter_out_of_scope:
-  - text: Tôi không hiểu ý của bạn. Bạn có thể nhập lại yêu cầu được không ?
+  - text: Xin lỗi, tôi không thể xử lí yêu cầu của bạn.
   utter_cam_xuc_buon:
   - text: Bot xin lỗi! bot chưa đủ năng lực để trả lời câu của bạn! Bot sẽ học hỏi
       nhiều hơn ạ!
@@ -243,6 +248,16 @@ responses:
       \ tên trong văn bằng \n- Trường hợp nhận hộ phải có giấy ủy quyền của người\
       \ được cấp bằng và có xác nhận của cơ quan hoặc chính quyền Phường (Xã) nơi\
       \ người được cấp đang công tác, cư trú"
+  utter_Chuan_đau_ra_tieng_anh:
+  - text: Ra trường đạt trình độ B1. Hết năm hai là A1, hết năm 3 là A2
+  utter_Hoc_lai_ngoai_ngu:
+  - text: các học phần ngoại ngữ thi không đạt có thể thi lại không bắt buộc học lại
+  utter_Mien_hoc_phan_ngoai_ngu:
+  - text: Đây là quy định mieernxc  học ngoại ngữ
+  utter_Tham_gia_cac_hoat_dong_ren_luyen_chinh_tri:
+  - text: Đây là quy định tham gia hoạt động rèn luyện
+  utter_nlu_fallback:
+  - text: Tôi xin lỗi, tôi không hiểu lắm. Bạn có thể diễn đạt lại được không?
 actions:
 - utter_xin_ten
 - utter_bat_lich_su
@@ -253,3 +268,4 @@ actions:
 - utter_out_of_scope
 - utter_cam_xuc_buon
 - utter_dieu_kien_de_duoc_xet_tot_nghiep
+- utter_nlu_fallback
