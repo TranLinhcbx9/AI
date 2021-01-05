@@ -7,7 +7,15 @@ pipeline:
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
   - name: WhitespaceTokenizer
+    # Flag to check whether to split intents
+    "intent_tokenization_flag": False
+    # Symbol on which intent should be split
+    "intent_split_symbol": "_"
+    # Regular expression to detect tokens
+    "token_pattern": None
   - name: RegexFeaturizer
+    # Text will be processed with case sensitive as default
+    "case_sensitive": True
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
